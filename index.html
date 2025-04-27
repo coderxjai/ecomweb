@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Shop</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .large-image-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .large-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gif-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .gif {
+            width: 80%; /* Adjusts the size to 80% of the screen width */
+            max-height: 50vh; /* Takes up to 50% of the screen height */
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Fresh Vegetable Shop 🥬
+    </header>
+
+    <div class="large-image-container">
+        <!-- Large Image at the top -->
+        <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vegetable Basket" class="large-image">
+    </div>
+
+    <div class="gif-container">
+        <!-- GIF Image taking up 40-50% of the screen -->
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2o1aXh1OGp4ejZrYWFxYmJjM3pzb2Ezc3ZwdmxleTQyMWM3eTJyeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zqtOYPQZ8Kb5pMlH8p/giphy.gif" alt="Vegetable GIF" class="gif">
+    </div>
+
+    <div class="product-container" id="product-list">
+        <!-- Products will be injected here by JavaScript -->
+    </div>
+
+    <footer>
+        <p>© 2025 Fresh Vegetable Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
